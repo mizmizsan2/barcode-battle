@@ -1,0 +1,79 @@
+.chara{
+padding: 0.5em 1em;
+    margin: 2em 0;
+    border: double 5px #4ec4d3;
+}
+
+.chara2{
+padding: 0.5em 1em;
+    margin: 2em 0;
+    border: double 5px #ffb7d2;
+}
+
+.status{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+}
+
+.para{
+padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #255aa0;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+
+.para2{
+padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #e60000;/*文字色*/
+    background: #FFF;
+    border: solid 3px #9c0000;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+
+.scan {
+  -webkit-transform: skew(-15deg);
+  transform: skew(-15deg);
+  color: #fff;
+  border-radius: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#4effff), to(#009efd));
+  background-image: -webkit-linear-gradient(left, #4effff 0%, #009efd 100%);
+  background-image: linear-gradient(90deg, #4effff 0%, #009efd 100%);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.scan2{
+      -webkit-transform: skew(-15deg);
+  transform: skew(-15deg);
+  color: #fff;
+  border-radius: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff9eae), to(#c70000));
+  background-image: -webkit-linear-gradient(left, #ff9eae 0%, #c70000 100%);
+  background-image: linear-gradient(90deg, #ff9eae 0%, #c70000 100%);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+h1{
+    font-size: 160%;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #474747;
+    background: whitesmoke;/*背景色*/
+    border-left: double 7px #1300c0;/*左線*/
+    border-right: double 7px #1300c0;/*右線*/
+}
+
+.turn{
+    padding: 8px 19px;
+    margin: 2em 0;
+    color: #2c2c2f;
+    background: #ececec;
+    border-top: solid 5px #919191;
+    border-bottom: solid 5px #919191;
+}
