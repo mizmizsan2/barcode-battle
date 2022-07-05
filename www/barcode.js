@@ -2,7 +2,7 @@ let options = {
     preferFrontCamera: false,
     showFlipCameraButton: true,
     showTorchButton: true,
-    formats: "QR_CODE,DATA_MATRIX,UPC_A,UPC_E,EAN_8,EAN_13,CODE_39,CODE_93,CODE_128,ITF,PDF_417,AZTEC",
+    formats: "EAN_13",
     disableAnimations: true, // iOS
     disableSuccessBeep: false, // iOS and Android
 };
@@ -157,11 +157,9 @@ function onError(error) {
 }
 
 function scan() {
-    onSuccess({ text: "00000000000000" });
-    // cordova.plugins.barcodeScanner.scan(onSuccess, onError, options);
+    cordova.plugins.barcodeScanner.scan(onSuccess, onError, options);
 }
 
 function scan2() {
-    onSuccess2({ text: "4321987654321" });
-    // cordova.plugins.barcodeScanner.scan(onSuccess2, onError, options);
+    cordova.plugins.barcodeScanner.scan(onSuccess2, onError, options);
 }
