@@ -31,36 +31,14 @@ class Barcode {
 let bar1, bar2;
 
 function onSuccess(result) {
-    // alert(
-    //     "結果: " + result.text + "\n" +
-    //     "バーコードの種類: " + result.format + "\n" +
-    //     "スキャンが中断されたかどうか: " + result.cancelled
-    // )
-    //divタグを作る
-
 
     bar1 = new Barcode(result.text);
     console.log(bar1.barcode);
-
-    // preview();
-
-    let div = document.createElement("div");
-
-    //読み込み結果のテキストを作る
-    let text = document.createTextNode(result.text);
-
-    //作ったdivにテキスト設定
-    div.appendChild(text);
-
-    let results = document.getElementById("results");
-    // results.appendChild(div);   //作ったdivをresultsの要素の下につなげる
 
 
     document.getElementById("HP").innerHTML = `体力＝${bar1.hp}`;
     document.getElementById("ST").innerHTML = `攻撃力＝${bar1.st}`;
     document.getElementById("DF").innerHTML = `防御力＝${bar1.df}`;
-
-
 
 }
 
@@ -68,18 +46,7 @@ function onSuccess2(result) {
 
     bar2 = new Barcode(result.text);
     console.log(bar2.barcode);
-    //divタグを作る
-    let div = document.createElement("div");
-
-    //読み込み結果のテキストを作る
-    let text = document.createTextNode(bar2.barcode);
-
-    //作ったdivにテキスト設定
-    div.appendChild(text);
-
-    let results2 = document.getElementById("results2");
-    // results2.appendChild(div);   //作ったdivをresultsの要素の下につなげる
-
+ 
     document.getElementById("HP2").innerHTML = `体力＝${bar2.hp}`;
     document.getElementById("ST2").innerHTML = `攻撃力＝${bar2.st}`;
     document.getElementById("DF2").innerHTML = `防御力＝${bar2.df}`;
